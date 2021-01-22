@@ -1,9 +1,7 @@
-let vimplug_exists=expand('~/.config/nvim/autoload/plug.vim')
-
-if !filereadable(vimplug_exists)
-  silent exec "!"curl_exists" -fLo " . shellescape(vimplug_exists) . " --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
-  let g:not_finish_vimplug = "yes"
-  autocmd VimEnter * PlugInstall
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync
 endif
 
 call plug#begin(expand('~/.config/nvim/plugged'))
