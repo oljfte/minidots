@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+update-nvim
+update-tmux
