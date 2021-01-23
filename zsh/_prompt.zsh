@@ -116,7 +116,7 @@ TRAPINT() {
 function set-prompt() {
     emulate -L zsh
     vcs_info
-    local top_left="%K{8} %~ %k"
+    local top_left="%K{7}  %m  %k%K{8}  %~  %k"
     local top_right="%K{8}$(git-action)$(git-status)%k%K{7}$(git-branch)%k"
 
     PROMPT=$'\n'$'\n'$(fill-line "$top_left" "$top_right" "8")$'\n'"$BOTTOM_LEFT"
