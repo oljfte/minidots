@@ -108,6 +108,8 @@ zle -N transient-line
 bindkey '^M' transient-line
 bindkey -M vicmd '^M' transient-line
 
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS=(transient-line $ZSH_AUTOSUGGEST_CLEAR_WIDGETS)
+
 TRAPINT() {
     transient-line &>/dev/null
     return $(( 128 + $1 ))
