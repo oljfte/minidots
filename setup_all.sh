@@ -14,3 +14,6 @@ export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # Change shell to Zsh
 sudo chsh -s "$(command -v zsh)" "${USER}"
+
+# Reboot
+sudo reboot
