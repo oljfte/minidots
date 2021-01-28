@@ -10,7 +10,7 @@ export FZF_DEFAULT_COMMAND='fd --type file --follow --hidden --exclude .git --ex
 export FZF_DEFAULT_OPTS="--reverse --color 16 --inline-info --multi --ansi \
     --bind tab:toggle,shift-tab:toggle-all,ctrl-j:down,ctrl-k:up,ctrl-l:preview-down,ctrl-h:preview-up --preview-window wrap"
 export FZF_CTRL_T_COMMAND='fd --follow --hidden --exclude .git --exclude .DS_Store'
-export FZF_CTRL_T_OPTS="--preview 'bat {}'"
+export FZF_CTRL_T_OPTS="--preview 'cat {}'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
 # Aliases

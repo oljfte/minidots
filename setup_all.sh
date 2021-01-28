@@ -15,5 +15,4 @@ export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 # Change shell to Zsh
 sudo chsh -s "$(command -v zsh)" "${USER}"
 
-# Reboot
-sudo reboot
+echo "Finished minidots setup. You should restart your machine to activate everything."
