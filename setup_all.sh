@@ -4,7 +4,7 @@
 export DOTFILES="$HOME/minidots"
 [ -d $DOTFILES ] && rm -rf $DOTFILES
 
-cd && git clone https://github.com/oljfte/minidots.git
+git clone https://github.com/oljfte/minidots.git $DOTFILES
 
 # Run setup scripts for global configs
 for setup_script in $DOTFILES/*/setup.sh; do bash $setup_script; done
